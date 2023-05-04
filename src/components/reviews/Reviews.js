@@ -41,7 +41,7 @@ const Reviews = ({getMovieData, movie, reviews, setReviews}) => {
             <Col>
                 <img src={movie?.poster} alt=""/>
             </Col>
-            <Col>
+            <Col key={movie.imdbId}>
                 {
                     <>
                         <Row>

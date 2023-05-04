@@ -1,4 +1,3 @@
-// import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './Hero.css';
 import { Paper } from "@mui/material"
@@ -21,7 +20,7 @@ const Hero = ({movies}) => {
             {
                 movies?.map((movie) => {
                     return (
-                        <Paper>
+                        <Paper key={movie.imdbId}>
                             <div className="movie-card-container">
                                 <div className="movie-card" style={{"--img": `url(${movie.backdrops[0]})`}}>
                                     <div className="movie-detail">
